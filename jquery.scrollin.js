@@ -4,19 +4,16 @@
  * Can be used multiple times safely.
  *
  * By Evan Leis
- *
- * Copyright (c) 2012 Evan Leis
- *
- * Project Home:
- *   https://github.com/explodes/jquery.scrollin.js
+ * 
+ * Copyright (c) 2007-2012 Mika Tuupola
  *
  * Licensed under the MIT license:
  *   http://www.opensource.org/licenses/mit-license.php
- *
- * example:
+ *   
+ * example: 
  *
  * $( '#content' ).children().not('article').ScrollIn({
- *     offset:40,
+ *     offset:40, 
  *     fadeSpeed:1500
  * });
  *
@@ -24,7 +21,7 @@
  *     fadeSpeed:600
  * });
  *
- * complex example:
+ * complex example: 
  *
  * $( '#content' ).children().ScrollIn({
  *
@@ -33,7 +30,7 @@
  *         $el.fadeIn( 1000 ).animate({
  *             padding: 10
  *         }, 10000 );
- *     },
+ *     }, 
  *
  *     initial: function( $el, top, limit ) {
  *         if ( top <= limit ) {
@@ -43,7 +40,7 @@
  *                 padding: 0
  *             });
  *         }
- *     },
+ *     }, 
  *     offset: 100
  * });
  *
@@ -56,17 +53,17 @@
 
 	var pluginDefaults = {
 		//Custom handler. function( $el, top, limit )
-		handler: undefined,
+		handler: undefined, 
 		// Without a custom handler,  Use either fade speed or you own custom handler.
-		fadeSpeed: 2500,
+		fadeSpeed: 2500, 
 		// Without a custom handler, use this easing equation
-		handlerEasing: "swing",
+		handlerEasing: "swing", 
 		// Without a custom handler, use this as a callback
-		handlerCallback: undefined,
+		handlerCallback: undefined, 
 		// Fade in when the element is X pixels below the bottom
-		offset: 40,
+		offset: 40, 
 		// Handle elements within bounds immediately.
-		handleAtStart: true,
+		handleAtStart: true, 
 		// Function to apply to all elements after the top position has been calculated
 		initial: function( $el, top, limit ) {
 			if ( top > limit ) {
@@ -179,7 +176,7 @@
 			this.unbindScroll();
 		}
 	}
-
+	
 	$.fn[pluginName] = function( options ) {
 		new Fader(this, options);
 	}
