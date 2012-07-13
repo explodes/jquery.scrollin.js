@@ -1,11 +1,15 @@
-/**
+/*
  * Fade elements in as the user scrolls or resizes content into view.
  * Unbinds itself when all elements have been displayed.
  * Can be used multiple times safely.
  *
  * By Evan Leis
- * July 12, 2012
+ * 
+ * Copyright (c) 2007-2012 Mika Tuupola
  *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   
  * example: 
  *
  * $( '#content' ).children().not('article').ScrollIn({

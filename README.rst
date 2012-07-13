@@ -21,7 +21,7 @@ You can use either the default handler which fades in using the options *fadeSpe
     Without a custom handler, use this as a callback.
 **offset** : *40*
     Fade in when the element is X pixels below the bottom .
-**handleAtStart** : *true*
+i**handleAtStart** : *true*
     Handle elements within bounds immediately.
 **initial** : fn($el, top, limit)
     Function to apply to all elements after the top position has been calculated when the plugin is started (called).
@@ -69,4 +69,6 @@ complex example
         offset: 100
     });
 
+
+`Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>`_
 
