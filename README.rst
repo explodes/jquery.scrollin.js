@@ -20,12 +20,12 @@ You can use either the default handler which fades in using the options *fadeSpe
 **handlerCallback** : *undefined*
     Without a custom handler, use this as a callback.
 **offset** : *40*
-    Fade in when the element is X pixels below the bottom .
+    Fade in when the element is X pixels below the bottom.
 **handleAtStart** : *true*
     Handle elements within bounds immediately.
 **initial** : *fn($el, top, limit)*
     Function to apply to all elements after the top position has been calculated when the plugin is started (called).
-    Default function hides elements that fall below the limit (bottom of window + offset)
+    Default function hides elements that fall below the limit (bottom of window + offset.)
 
 -------
 example
