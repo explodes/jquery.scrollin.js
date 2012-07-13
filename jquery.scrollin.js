@@ -49,7 +49,7 @@
 
 	var pluginDefaults = {
 		//Custom handler. function( $el, top, limit )
-		handler : undefined, 
+		handler: undefined, 
 		// Without a custom handler,  Use either fade speed or you own custom handler.
 		fadeSpeed: 2500, 
 		// Without a custom handler, use this easing equation
@@ -61,7 +61,7 @@
 		// Handle elements within bounds immediately.
 		handleAtStart: true, 
 		// Function to apply to all elements after the top position has been calculated
-		initial : function( $el, top, limit ) {
+		initial: function( $el, top, limit ) {
 			if ( top > limit ) {
 				$el.hide();
 			}
