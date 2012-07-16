@@ -117,11 +117,13 @@
 				map[top].push( $el );
 			}
 		});
-		var limit = self.getLimit();
-		for (var top in map) {
-			$(map[top]).each(function( index, el ) {
-				self.options.initial( $(el), top, limit );
-			});
+		if ($.isFunction(self.options.initial)) {
+			var limit = self.getLimit();
+			for (var top in map) {
+				$(map[top]).each(function( index, el ) {
+					self.options.initial( $(el), top, limit );
+				});
+			}
 		}
 		return map;
 	}
